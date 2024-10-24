@@ -50,6 +50,10 @@ class Text : Component {
             SDL_DestroyTexture(rendered_text);
             return 0;
         }
+        void move (int newX, int newY) {
+            this->x = newX;
+            this->y = newY;
+        }
 };
 
 #endif

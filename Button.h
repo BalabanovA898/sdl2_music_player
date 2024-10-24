@@ -20,7 +20,7 @@ class Button : Component {
             {   
                 case SDL_MOUSEBUTTONDOWN:
                     if ((e.motion.x > x && e.motion.x < x + w) && (e.motion.y > y && e.motion.y < y + h))
-                        isPressed = true;                      
+                       isPressed = true;
                     break;
                 case SDL_MOUSEBUTTONUP:
                     isPressed = false;
@@ -56,6 +56,13 @@ class Button : Component {
         const char *getText () {
             return this->text.getText();
         }
+
+         void move (int newX, int newY) {
+            this->x = newX;
+            this->y = newY;
+            this->text.move(newX + w / 4, newY + h / 4);
+        };
+
 };
 
 #endif

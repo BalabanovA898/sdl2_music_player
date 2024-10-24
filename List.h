@@ -58,7 +58,7 @@ class List : Component {
             return this->elements;
         }
 
-        void resize (int newWidth, int newHeight) {
+        void resizeList (int newWidth, int newHeight) {
             this->w = newWidth;
             this->h = newHeight;
             maxElementOnScreen = h / (LINE_HEIGHT + LINE_GAP) + LIST_MAX_ELEMENT_ON_SCREEN_OFFSET;

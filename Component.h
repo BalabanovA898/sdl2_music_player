@@ -11,7 +11,12 @@ class Component {
             y = positionY;
             w = width;
             h = height;
-        }        
-};
+        };
 
+        void resize (int newWidth, int newHeight) {
+            this->w = newWidth;
+            this->h = newHeight;
+        };
+
+};
 #endif
