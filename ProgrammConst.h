@@ -10,5 +10,4 @@
 //#define PLATFOTM_LINUX
 //#define PLATFORM_WINDOWS
 #define DEV
-
 #endif
